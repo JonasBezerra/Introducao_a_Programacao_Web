@@ -23,5 +23,14 @@ console.log("\n ============== ! ========= \n")
 console.log( !(5 == 5) ) // false
 console.log( !(5 != 5) ) // true
 
+const idade = 17
+
+if (!(idade >= 18) || idade === 17) {
+    console.log(`\nBloquear Entrada!.`)
+} else {
+    console.log(`\nDeixar entrar`)
+}
+
+
 
 
