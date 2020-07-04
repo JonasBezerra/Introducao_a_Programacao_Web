@@ -3,7 +3,8 @@
 
     ° Pode ser uma Várivel Multipla
     ° Ou pode ser uma coleção de Objetos.
-    ° É uma Variavel compost
+    ° É uma Variavel composta
+    ° Array também é um Objeto.
 */
 
 const alunos = [
