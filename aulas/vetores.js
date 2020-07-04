@@ -1,8 +1,9 @@
 /* ==================================================
-    VETORES ou ARRAYS
+    VETORES ou ARRAYS ou variavel composta
 
     ° Pode ser uma Várivel Multipla
     ° Ou pode ser uma coleção de Objetos.
+    ° É uma Variavel compost
 */
 
 const alunos = [
