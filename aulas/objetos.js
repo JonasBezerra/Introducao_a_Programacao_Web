@@ -1,5 +1,6 @@
 /*=============================================
-    OBJETOS EM JS
+    OBJETOS EM JS.
+    
 */
 
 const aluno01 = { // CRIEI UM OBETO

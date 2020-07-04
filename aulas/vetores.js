@@ -20,6 +20,8 @@ const alunos = [
     }
     ]
 
-    const mediaAluno = (alunos[0].nota + alunos[1].nota + alunos[2].nota)/3
+const nomAlunos = ['Jonas','Luiz','Ismael']
 
-    console.log(`A média da sala é: ${mediaAluno.toFixed(1)}`)
+console.log(alunos); // mostra todo o array;
+console.log(alunos[0]); // filtra um objeto especifíco e imprimi todos os seu atributos e métodos
+console.log(alunos[1].nota) // pega um objeto, com um atributo especifíco dele;
