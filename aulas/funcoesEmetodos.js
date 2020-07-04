@@ -25,18 +25,19 @@ const alunosTurma2 = [ // Um Array Recebendo vários Objetos.
 
 
 
-const mediaTurma1 = calcularMedia(alunosTurma1); // passando o objeto como parâmetro
-const mediaTurma2 = calcularMedia(alunosTurma2);
+const mediaTurma1 = calcularMedia(alunosTurma1); // Aqui! estou chamando a função. Então ela será executada.
+const mediaTurma2 = calcularMedia(alunosTurma2); // Depois passo o parÂmentro que é um objeto no método
 
-enviaMsg(mediaTurma1,'Turma A');
+enviaMsg(mediaTurma1,'Turma A'); // Chamando a Função e passando os parâmetros
 enviaMsg(mediaTurma2,'Turma B')
 
         
-function calcularMedia(turma) {
-    return (turma[0].nota + turma[1].nota +turma[2].nota)/3
+function calcularMedia(turma) { // essa Função só vai ser executada se eu chamar ela
+    return (turma[0].nota + turma[1].nota +turma[2].nota)/3 // Aqui é a ação que eu vou executar quando eu chamar esse método
 }
 
-function enviaMsg(media, nomeTurma) { 
+function enviaMsg(media, nomeTurma) { // Essa Função so vai ser executada quando eu executar ela
+    // Abaixo é a ação que eu vou executar quando eu chamar esse método
     if (media > 5) {
         console.log(`A media da ${nomeTurma} foi de ${media.toFixed(1)} Parabens!.`)
     } else {
