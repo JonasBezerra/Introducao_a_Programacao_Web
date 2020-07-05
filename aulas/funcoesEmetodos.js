@@ -3,7 +3,7 @@
 // Mensagem de calculo da média
 
 /* VAMOS FALAR SOBRE MÉTODOS. 
-    1) Método é uma função.
+    1) Método ou função.
     2) Pode ou não atrelar Parâmetros.
     3) O parâmetro de forma Geral é uma forma acessar meus atributos. 
     4) Vantagem de evitar códigos desnecessários
