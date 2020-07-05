@@ -1,7 +1,10 @@
 // Usuários e tecnologias
 
-// O for in --> Itera sobre o nome das propriedades do Objeto
-// O for of --> Itera sobre os valores dessas propriedades.
+/* O for in --> Itera sobre o nome das propriedades do Objeto. Ex: let usuarios = [nome:'Jonas'];
+        No exemplo Acima ele vai pegar a posição.
+   O for of --> Itera sobre os valores dessas propriedades.
+        No exemplo acima ele pega o valor dentro da propriedade no caso jonas
+*/
 
 const usuarios = [
     { nome: 'Carlos', tecnologias: ['HTML', 'CSS'] },
@@ -10,13 +13,14 @@ const usuarios = [
   ]
 
 for (let usuario of usuarios) {
-    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias}`)
 }
 
 // Busca por tecnologia
 function checaSeUsuarioUsaCSS(usuario) { 
     for (let tecnologia of usuario.tecnologias) {
         if (tecnologia == 'CSS') return true
+       
     }
 
     return false
