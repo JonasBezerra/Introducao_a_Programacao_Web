@@ -18,11 +18,22 @@ function listUser(user) {
     }
 }
 
-function trabalhoCss(user) {
+function checaSeUsuarioUsaCSS(user) {
     for(let key in user){
-
+        if(user[key].tecnologias[key] == 'Css'){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
 // agora vamos chamar a função para ela ser executada
 
 listUser(usuarios);
+
+for(let key in usuarios){
+    let checado = console.log(checaSeUsuarioUsaCSS(usuarios));
+    if (checado) {
+        console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
+    }
+}
