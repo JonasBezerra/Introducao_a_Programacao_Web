@@ -28,7 +28,7 @@ const alunosTurma2 = [ // Um Array Recebendo vários Objetos.
 const mediaTurma1 = calcularMedia(alunosTurma1); // Aqui! estou chamando a função. Então ela será executada.
 const mediaTurma2 = calcularMedia(alunosTurma2); // Depois passo o parÂmentro que é um objeto no método
 
-enviaMsg(mediaTurma1,'Turma A'); // Chamando a Função e passando os parâmetros
+enviaMsg(mediaTurma1,'Turma A'); // Chamando a Função e colocando valor no parâmetro
 enviaMsg(mediaTurma2,'Turma B')
 
         
