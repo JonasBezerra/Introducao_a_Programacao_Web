@@ -1,39 +1,31 @@
-/* Baseado no desafio anterior, utilize a mesma lista de usuários construída.
+// Usuários e tecnologias
 
-    Crie uma função que recebe os dados de um objeto de usuário e retorna SE o usuário trabalha com CSS ou não. Essa função deve retornar um boolean true/false.*/
+// O for in --> Itera sobre o nome das propriedades do Objeto
+// O for of --> Itera sobre os valores dessas propriedades.
 
-    
-var usuarios = [
-    {nome:'Jonas', tecnologias: ['Html',' Css']},
-    {nome:'Luiz', tecnologias: ['Js',' Node']},
-    {nome:'Pedro', tecnologias: ['Android', ' Java']}
-]
+const usuarios = [
+    { nome: 'Carlos', tecnologias: ['HTML', 'CSS'] },
+    { nome: 'Jasmine', tecnologias: ['JavaScript', 'CSS'] },
+    { nome: 'Tuane', tecnologias: ['HTML', 'Node.js'] }
+  ]
 
-// Percorra a lista de usuários com uma estrutura de repetição imprimindo em tela as informações dos usuários:
-
-function listUser(user) {
-    for (const pos in user) { // para cada posição ou chave ou key em 'nome do Objeto ou array'
-
-       console.log(`${user[pos].nome} Trabalha com ${user[pos].tecnologias}`)
-    }
+for (let usuario of usuarios) {
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
 }
 
-function checaSeUsuarioUsaCSS(user) {
-    for(let key in user){
-        if(user[key].tecnologias[key] == 'Css'){
-            return true;
-        }else{
-            return false;
-        }
+// Busca por tecnologia
+function checaSeUsuarioUsaCSS(usuario) { 
+    for (let tecnologia of usuario.tecnologias) {
+        if (tecnologia == 'CSS') return true
     }
+
+    return false
 }
-// agora vamos chamar a função para ela ser executada
 
-listUser(usuarios);
+for (let i = 0; i < usuarios.length; i++) {
+    const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i])
 
-for(let key in usuarios){
-    let checado = console.log(checaSeUsuarioUsaCSS(usuarios));
-    if (checado) {
-        console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
+    if(usuarioTrabalhaComCSS) {
+        console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`)
     }
 }
