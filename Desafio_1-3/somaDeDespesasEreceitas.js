@@ -19,8 +19,8 @@ const usuarios = [
   ]
 
 function calculaSaldo(receitas, despesas) {
-    const somaReceitas = somaNumeros(receitas)
-    const somaDespesas = somaNumeros(despesas)
+    const somaReceitas = somaNumeros(receitas) // antes de perder o valor ele armazena na variavel 'somaReceitas'
+    const somaDespesas = somaNumeros(despesas) // aqui o valor antigo é perdido 
     
     return somaReceitas - somaDespesas
 }
