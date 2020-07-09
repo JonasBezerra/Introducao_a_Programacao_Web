@@ -13,14 +13,15 @@ const usuarios = [
   ]
 
 for (let usuario of usuarios) {
-    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias}`)
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
 }
 
 // Busca por tecnologia
-function checaSeUsuarioUsaCSS(usuario) { 
-    for (let tecnologia of usuario.tecnologias) {
-        if (tecnologia == 'CSS') return true
-       
+function checaSeUsuarioUsaCSS(usuario) { // A posição será passado aqui em cima!.
+    for (let tecnologia of usuario.tecnologias) { // for in ou for of. Não precisa indicar posição ex: for (let tecnologia of usuario)
+        if (tecnologia == 'CSS'){
+             return true
+        }
     }
 
     return false

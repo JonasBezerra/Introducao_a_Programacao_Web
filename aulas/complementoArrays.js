@@ -1,13 +1,13 @@
-/* O for in --> Itera sobre o nome das propriedades do Objeto. Ex: alunos[key].nome
-        No exemplo Acima pra ele mostrar o nome ele vai ter que pegar a posição e a propriedade
+/* O for in --> Itera sobre o nome das propriedades do Objeto. 
+        a posição de um array é como se fosse a propriedade desse array
 
-   O for of --> Itera sobre os valores dessas propriedades. Ex: alunos.nome
-        No exemplo acima ja pega diretamente o valor dessa propriedade
+   O for of --> Itera sobre os valores dessas propriedades. 
+        
 */
 
 
-let alunos = [{nome: 'Jonas', idade: 17, tecnologias:['Java', 'PHP']},
-              {nome: 'Luis', idade:21,tecnologias:['JS', 'Android']}
+let alunos = [{nome: 'Jonas',  tecnologias:['Java', 'PHP']}, // como array --> const a = ['Jonas', idade] --> presta atenção. 
+              {nome: 'Luis',tecnologias:['JS', 'Android']}
                         
 ]
             
@@ -16,9 +16,13 @@ for (const key in alunos) { // Nesse caso Especifico para imprimir o valor desse
 }
 
 console.log(`=========================================================`)
-for (const i of alunos[0].tecnologias) { // Nesse caso ele ja vai imprimir diretamente o valor do atributo no console
-    console.log(i);
-}            
+
+
+    for (let tecnologia of alunos.tecnologias) {
+        console.log(tecnologias)
+
+}
+       
 
 // mais atenção:
     /* Quando se tenta fazer uma iteração diretamente com um Objeto. Ira ter alguns BUGS.
