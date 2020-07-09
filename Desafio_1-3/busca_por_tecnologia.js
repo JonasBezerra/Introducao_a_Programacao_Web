@@ -19,6 +19,7 @@ for (let usuario of usuarios) {
 // Busca por tecnologia
 function checaSeUsuarioUsaCSS(usuario) { // A posição será passado aqui em cima!.
     for (let tecnologia of usuario.tecnologias) { // for in ou for of. Não precisa indicar posição ex: for (let tecnologia of usuario)
+        // ATENÇÃO no usuario.tecnologia
         if (tecnologia == 'CSS'){
              return true
         }
