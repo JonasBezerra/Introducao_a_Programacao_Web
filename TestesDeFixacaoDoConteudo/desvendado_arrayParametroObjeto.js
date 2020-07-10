@@ -19,6 +19,19 @@ console.log(numeros(8))
 */
 
 const num = [12,12,23] // O OBJETO QUE FICARÁ COMO PARÂMETRO
+
+function numeros(numP){
+  let soma = 0;
+  for(let i = 0; i< numP.length; i++ ){
+    soma += numP[i];
+  }
+  return soma
+}
+console.log(`A SOMA É: ${numeros(num)}`); // JOGANDO O ARRAY NO PARAMETRO
+
+
+// EXEMPLO 2. VAMOS PERCORRE UM ATRIBUTO DE UM OBJETO QUE TEM UM ARRAY
+
 const usuarios = [
   {
     nome: 'Salvio',
@@ -31,30 +44,21 @@ const usuarios = [
     despesas: [185.3, 12.1, 120.0]
   }]
 
-function numeros(num){
-  let soma = 0;
-  for(let i = 0; i< num.length; i++ ){
-    soma += num[i];
+  
+  // METODO PARA SUBTRAIR A SOMA DAS DESPESAS E RECEITAS
+function subReceitasDespesas(receitas,despesas){
+  const somaR = somaReceitaDespesas(receitas); // METODO QUE RETORNA A SOMA DAS RECEITAS
+  const somaD = somaReceitaDespesas(despesas) // METODO QUE RETORNA A SOMA DAS DESPESAS
+    
+  return somaR - somaD;
+
   }
-  return soma
-}
-console.log(numeros(`A SOMA É: ${num}`)); // JOGANDO O ARRAY NO PARAMETRO
-
-
-// EXEMPLO 2. VAMOS PERCORRE UM ATRIBUTO DE UM OBJETO QUE TEM UM ARRAY
-
 function somaReceitaDespesas(srd){
   let soma = 0;
-    for (let i = 0; i < srd.length; i++) {
-      soma += srd[i];
-    }
-    return soma;
-}
-function subReceitasDespesas(receitas,despesas){
-  const somaR = somaReceitaDespesas(receitas);
-  const somaD = somaReceitaDespesas(despesas)
-
-  return somaR - somaD;
+  for (let i = 0; i < srd.length; i++) {
+    soma += srd[i];
+  }
+  return soma;
 }
 
 

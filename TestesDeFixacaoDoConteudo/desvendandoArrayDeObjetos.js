@@ -16,7 +16,7 @@ console.log('\n\t======================\n')
 verificarPessoas(pessoas)
 
 function verificarPessoas(pessoa){
-    let idade = ''
+    let idade = 0
     for (let i = 0; i < pessoa.length; i++) {
         idade = pessoa[i].idade;
         if(idade < 18 ){
