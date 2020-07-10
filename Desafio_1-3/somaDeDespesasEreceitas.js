@@ -26,13 +26,11 @@ function calculaSaldo(receitas, despesas) {
 }
 
 function somaNumeros(numeros) {
-    let soma = 0
-
-    for (let numero of numeros) {
-        soma = soma + numero
-    }
-
-    return soma
+  let soma = 0 
+  for(let i = 0 ; i <numeros.length; i++){
+      soma = soma + numeros[i]
+  }
+  return soma
 }
 
 for (let usuario of usuarios) {
