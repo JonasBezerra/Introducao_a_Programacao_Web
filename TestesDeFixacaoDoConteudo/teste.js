@@ -20,7 +20,7 @@ function calculaSaldo(receitas, despesas) {
     
 }
 
-function somaNumeros(numeros[]) {
+function somaNumeros(numeros) {
     let soma = 0;
 
     for (let i = 0; i < numero.length; i++) {
