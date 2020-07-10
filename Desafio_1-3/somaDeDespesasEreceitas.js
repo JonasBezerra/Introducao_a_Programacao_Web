@@ -35,7 +35,7 @@ function somaNumeros(numeros) {
 
 for (let usuario of usuarios) {
     const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
-
+    // MUITA ATENÇÃO. RECEITAS E DESPESAS SAO ARRAYS
     if (saldo > 0) {
         console.log(`${usuario.nome} possui saldo POSITIVO de ${saldo.toFixed(2)}`)
     } else {

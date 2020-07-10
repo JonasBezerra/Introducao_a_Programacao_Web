@@ -1,32 +1,31 @@
-const usuarios = [
-    {
-      nome: 'Salvio',
-      receitas: [115.3, 48.7, 98.3, 14.5],
-      despesas: [85.3, 13.5, 19.9]
-    },
-    {
-      nome: 'Marcio',
-      receitas: [24.6, 214.3, 45.3],
-      despesas: [185.3, 12.1, 120.0]
-    },
-    {
-      nome: 'Lucia',
-      receitas: [9.8, 120.3, 340.2, 45.3],
-      despesas: [450.2, 29.9]
-    }
-  ]
 
-function calculaSaldo(receitas, despesas) {
-    
+// IMPORTANTE LEMBRA SOBRE VARIAVEIS SIMPLES;
+//    ° ACEITAM APENAS 1 VALOR POR VEZ
+
+
+/*
+let soma = 0;
+function numeros(numeros){
+    soma = soma + numeros
+    return soma;
 }
 
-function somaNumeros(numeros) {
-    let soma = 0;
+console.log(numeros(2))
+console.log(numeros(8))
 
-    for (let i = 0; i < numero.length; i++) {
-        soma += numero[i]
-        
-    }
+// 2
+// 10
 
-    return soma
+*/
+
+const num = [12,12,23] // O OBJETO QUE FICARÁ COMO PARÂMETRO
+
+function numeros(num){
+  let soma = 0;
+  for(let i = 0; i< num.length; i++ ){
+    soma += num[i];
+  }
+  return soma
 }
+console.log(numeros(num)); // JOGANDO O ARRAY NO PARAMETRO
+
