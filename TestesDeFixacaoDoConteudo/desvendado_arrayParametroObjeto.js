@@ -27,7 +27,7 @@ function numeros(numP){
   }
   return soma
 }
-console.log(`A SOMA É: ${numeros(num)}`); // JOGANDO O ARRAY NO PARAMETRO
+console.log(`A SOMA É: ${numeros(num)}`); // CHAMANDO A FUNÇÃO E JOGANDO O ARRAY COMO PARÂMETRO 
 
 
 // EXEMPLO 2. VAMOS PERCORRE UM ATRIBUTO DE UM OBJETO QUE TEM UM ARRAY
@@ -63,7 +63,7 @@ function somaReceitaDespesas(srd){
 
 
 for (let i = 0; i < usuarios.length; i++) {
-    const result = subReceitasDespesas(usuarios[i].receitas, usuarios[i].despesas)
+    const result = subReceitasDespesas(usuarios[i].receitas, usuarios[i].despesas) // LEMBRANDO QUE RECEITAS E DESPESAS SÃO ARRAYS. LOGO QND FOR PASSADO NO PARAMETRO DO METODO "subReceitasDespesas()" O PARAMETRO SERÁ UM ARRAY
     
     if (result >= 0 ) {
       console.log(`${usuarios[i].nome }, tem Saldo ${result.toFixed(2)}. Positivo`);

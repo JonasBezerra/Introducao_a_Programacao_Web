@@ -1,4 +1,4 @@
-let usuarios = [
+let usuarios = [ // AQUI É UM ARRAY COM UM CONJUNTO DE OBJETOS
     {nome: 'JONAS', tecnologias: ['HTML','CSS']},
     {nome: 'BARBARA', tecnologias: ['JAVA', 'ANDROID']},
     {nome: 'BARBARA', tecnologias: ['JAVA', 'ANDROID']}]

@@ -1,7 +1,7 @@
 // Usuários e tecnologias
 
 /* O for in --> Itera sobre o nome das propriedades do Objeto. Ex: let usuarios = [nome:'Jonas'];
-        No exemplo Acima ele vai pegar a posição.
+        No exemplo Acima ele vai pegar o nome do atributo.
    O for of --> Itera sobre os valores dessas propriedades.
         No exemplo acima ele pega o valor dentro da propriedade no caso jonas
 */

@@ -8,7 +8,7 @@ const alunos = [
     // primeiro fazer um for para o Objeto alunos
 
     
-    function buscarCSS(alunos){ 
+    function buscarCSS(alunos){ // AQUI VAI SER PASSADO O OBJETO COMO PARÂMETRO. QUADO EU CHAMAR SERÁ PASSADO A POSIÇÃO
         for (const i of alunos.tecnologias) { // FOR OF ITERA SOBRE O VALOR DE CADA PROPRIEDADE OU ATRIBUTO.
             if(i ==='CSS'){
                 return true;
