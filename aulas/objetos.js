@@ -28,6 +28,7 @@ const alunos =  [{nome: 'Jonas'}, {nome: 'Karina'}]
 
 console.table(alunos)// imprime o array em formato de tabela
 
-alunos[0].idade = 18
+alunos[0].idade = 18// o aluno da posiçao 0 recebe idade = 18
 
 console.table(alunos)
+console.log(alunos[2])

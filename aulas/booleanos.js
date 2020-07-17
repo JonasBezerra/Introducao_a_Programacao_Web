@@ -10,7 +10,7 @@ function marcarReprovado(alunos){
         if(alunos.nota < 5){
             alunos.reprovado = true
     }
-    //console.table(alunos)
+    console.table(alunos)
 }
 
 function enviarMsgReprovado(alunos){
@@ -25,6 +25,7 @@ function alunoReprovado(alunos){
         marcarReprovado(aluno)
         enviarMsgReprovado(aluno)
     }
+  
 }
 
 alunoReprovado(alunos)
