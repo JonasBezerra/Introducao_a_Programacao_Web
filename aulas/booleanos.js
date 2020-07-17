@@ -5,18 +5,17 @@ const alunos = [
 ]
 
 function marcarReprovado(alunos){
-    for (const aluno of alunos) {
-        aluno.reprovado = false // coloca um atributo a mas em cada objeto
-        if(aluno.nota < 5){
-            aluno.reprovado = true
-        }
+    alunos.reprovado = false // coloca um atributo a mas em cada objeto
+    
+        if(alunos.nota < 5){
+            alunos.reprovado = true
     }
     //console.table(alunos)
 }
 
 function enviarMsgReprovado(alunos){
     // SE A MÉDIA FOR < 5
-    if(aluno.reprovado){
+    if(alunos.reprovado){
         console.log(`O aluno ${alunos.nome} está reprovado!.`)
     }
 }
@@ -28,7 +27,7 @@ function alunoReprovado(alunos){
     }
 }
 
-
+alunoReprovado(alunos)
 
 // marcar aluno como aprovado ou reprovado
 // se for > 6 aprovado
