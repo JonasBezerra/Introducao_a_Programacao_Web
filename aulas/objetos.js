@@ -20,3 +20,14 @@ const aluno03 = {
 
 const mediaAlunos = (aluno01.nota + aluno02.nota + aluno03.nota)/3
 console.log(`\nA Media da turma é: ${mediaAlunos.toFixed(1)}\n`);
+
+
+// ======================================
+
+const alunos =  [{nome: 'Jonas'}, {nome: 'Karina'}]
+
+console.table(alunos)// imprime o array em formato de tabela
+
+alunos[0].idade = 18
+
+console.table(alunos)
