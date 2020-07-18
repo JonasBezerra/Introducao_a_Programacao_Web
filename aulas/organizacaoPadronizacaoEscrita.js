@@ -1,34 +1,31 @@
 // ============== ORGANIZAÇÃO, PADRONIZAÇÃO E ESCRITA =========
-
-const alunos = [
-    {nome: 'Jonas', nota: 9.8 },
-    {nome: 'Gustavo', nota: 8.0},
-    {nome: 'Maik', nota: 4 }
+// barra azul é do controle de versao
+const students= [
+    {name: 'Jonas', grade: 9.8 },
+    {name: 'Gustavo', grade: 8.0},
+    {name: 'Maik', grade: 4 }
 ]
 
-function marcarReprovado(alunos){
-    alunos.reprovado = false // coloca um atributo a mas em cada objeto
-    
-        if(alunos.nota < 5){
-            alunos.reprovado = true
+function marcarReprovado(students){
+    students.reprovado = false // coloca um atributo a mas em cada objeto
+    if(students.grade< 5){
+            students.reprovado = true
     }
-    console.table(alunos)
 }
 
-function enviarMsgReprovado(alunos){
+function sendMessage(students){
     // SE A MÉDIA FOR < 5
-    if(alunos.reprovado){
-        console.log(`O aluno ${alunos.nome} está reprovado!.`)
+    if(students.reprovado){
+        console.log(`The student ${students.name} está reprovado!.`)
     }
 }
 
-function alunoReprovado(alunos){
-    for (let aluno of alunos) {
-        marcarReprovado(aluno)
-        enviarMsgReprovado(aluno)
+function markFlunked(students){
+    for (let student of students) {
+        marcarReprovado(student)
+        sendMessage(student)
     }
-  
 }
 
-alunoReprovado(alunos)
+markFlunked(students)
 
