@@ -18,7 +18,6 @@ var usuarios = [
 
 function listUser(user) {
     for (const pos in user) { // para cada posição ou chave ou key em 'nome do Objeto ou array'
-
        console.log(`${user[pos].nome} Trabalha com ${user[pos].tecnologias}`)
     }
 }

@@ -12,12 +12,12 @@ const usuarios = [
     { nome: 'Tuane', tecnologias: ['HTML', 'Node.js'] }
   ]
 
-for (let usuario of usuarios) {
+for (let usuario of usuarios) { // usuario. começa pegando todo objeto da 1° posição
     console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(', ')}`)
 }
 
 // Busca por tecnologia
-function checaSeUsuarioUsaCSS(usuario) { // A posição será passado aqui em cima!.
+function checaSeUsuarioUsaCSS(usuario) { // A posição será passado aqui em cima!. No parametro, quando eu chamar
     for (let tecnologia of usuario.tecnologias) { // for in ou for of. Não precisa indicar posição ex: for (let tecnologia of usuario)
         // ATENÇÃO no usuario.tecnologia
         if (tecnologia == 'CSS'){
