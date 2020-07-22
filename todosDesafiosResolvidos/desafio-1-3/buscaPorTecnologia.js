@@ -19,7 +19,7 @@ function checaSeUsuarioUsaCSS(user) {
 }
 for (let poss in users) {
     let encontradoCSS = checaSeUsuarioUsaCSS(users[poss])
-    
+     
     if(encontradoCSS){
         console.log(`O usuário ${users[poss].name} usa CSS`)
     }
