@@ -1,24 +1,25 @@
 const users = [
-    {name: 'Jonas', tecnologyes:['html', ' CSS']},
-    {name: 'Jasmine', tecnologyes:['JavaScript', ' CSS']},
+    {name: 'Jonas', tecnologyes:['html', 'CSS']},
+    {name: 'Jasmine', tecnologyes:['JavaScript', 'CSS']},
     {name:'Tuanne', tecnologyes:['HTML',' NodeJS']}
 ]
 // crie uma função que recebe os dados de um objeto de usuário e retorna SE o usuário trabalha com CSS ou não.
 // Essa função deve retornar um boolena true/false
 
-function checaSeUsuarioUsaCSS(users) {
+function checaSeUsuarioUsaCSS(user) {
     // percorra o array de tecnologias do usuário até encontrar se ele trabalha com CSS
     // SE encontrar, retorne true da função, caso contrário retorne false
-    for (let tecnology  of users.tecnology) {
+    for (let tecnology  of user.tecnologyes) {
         if(tecnology == 'CSS'){
             return true
+        }else{
+            return false
         }
-        return false
     }
 }
 
 for (let poss in users) {
-    let usaCSS = checaSeUsuarioUsaCSS(users[i])
+    let usaCSS = checaSeUsuarioUsaCSS(users[poss])
     console.log(usaCSS);
 }
 
