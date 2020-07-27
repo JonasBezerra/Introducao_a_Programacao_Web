@@ -29,8 +29,8 @@ const usuarios = [
 function calculaSaldo(receitas,despesas) {
 
     // PRECISO USAR O METODO somaNumeros
-    let somaReceitas = somaNumeros(receitas)
-    let somaDespesas = somaNumeros(despesas)
+    let somaReceitas = somaNumeros(receitas)// ANTES DE PERDER O VALOR RETORNADO ELA ARMAZENA NA VARIVEL 'somaReceitas'
+    let somaDespesas = somaNumeros(despesas) 
 
     return somaReceitas - somaDespesas
     // DEVE RETORNAR RECEITAS - DESPESAS
