@@ -14,18 +14,26 @@ function createTransaction(transaction) {
 
 }
 
-const transaction = {
-    type: 'Credit', value: 50.5
-}
 
 // calling creatTransaction()
 
-createTransaction(transaction);
+createTransaction({type:'Credit', value:90});
 console.log(user)
 
-const transaction2 = {
-    type: 'Debit', value:100.5
+// ======================================== RELATÓRIOS  ===========================================
+
+
+/*Crie uma função chamada getHigherTransactionByType que recebe como parâmetro o tipo de transação credit/debit, percorre as transações do usuário e retorna o objeto da transação de maior valor com aquele tipo:*/
+
+function getHigherTransactionByType(typeTransaction){
+    let heigherValue = 0;
+    for (const transaction of user.transactions) {
+        if(transaction.type == typeTransaction){
+            if(heigherValue >= transaction.value){
+                
+            }else{
+                heigherValue = transaction.value
+            }
+        }
+    }
 }
-
-createTransaction(transaction2);
-console.log(user)
