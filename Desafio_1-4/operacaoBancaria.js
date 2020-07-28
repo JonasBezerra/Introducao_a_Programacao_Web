@@ -46,6 +46,15 @@ console.log(getHigherTransactionByType('Debit'))
 
 // Crie uma função chamada getAverageTransactionValue que retorna o valor médio das transações de um usuário independente do seu tipo:
 
-getAverageTransactionValue(){
-    
+function getAverageTransactionValue(){
+    let averageValue = 0 // valor Médio
+    let sum = 0 // soma
+    let totValue = 0
+    for(let transaction of user.transactions){
+        sum += transaction.value
+        totValue++;
+    }
+
+    return sum/totValue
 }
+
