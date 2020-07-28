@@ -6,7 +6,7 @@ const user = {
 
 function createTransaction(transaction) {
     user.transactions.push(transaction)
-    if(transaction.type == 'Credit'){
+    if(transaction.type == 'credit'){
         user.balance += transaction.value;
     }else{
         user.balance -= transaction.value
@@ -17,11 +17,11 @@ function createTransaction(transaction) {
 
 // calling creatTransaction()
 
-createTransaction({type:'Credit', value:90});
-createTransaction({type:'Credit', value:220});
-createTransaction({type:'Debit', value:120});
-createTransaction({type:'Debit', value:80});
-console.log(user.balance)
+createTransaction({ type: "credit", value: 50 });
+createTransaction({ type: "credit", value: 120 });
+createTransaction({ type: "debit", value: 80 });
+createTransaction({ type: "debit", value: 30 });
+console.log('O Saldo é: '+user.balance)
 
 // ======================================== RELATÓRIOS  ===========================================
 
@@ -42,7 +42,8 @@ function getHigherTransactionByType(type) {
     return higherTransaction
 }
 
-console.log(getHigherTransactionByType('Debit'))
+console.log(`O maior valor de credit é:${getHigherTransactionByType('credit')}`)
+console.log(`O maior valor de debit é:${getHigherTransactionByType('debit')}`)
 
 // Crie uma função chamada getAverageTransactionValue que retorna o valor médio das transações de um usuário independente do seu tipo:
 
@@ -57,4 +58,4 @@ function getAverageTransactionValue(){
 
     return sum/totValue
 }
-
+console.log(`A média é: ${getAverageTransactionValue()}`);
