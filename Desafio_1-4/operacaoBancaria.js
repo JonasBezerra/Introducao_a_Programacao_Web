@@ -21,7 +21,7 @@ createTransaction({type:'Credit', value:90});
 createTransaction({type:'Credit', value:220});
 createTransaction({type:'Debit', value:120});
 createTransaction({type:'Debit', value:80});
-console.log(user)
+console.log(user.balance)
 
 // ======================================== RELATÓRIOS  ===========================================
 
