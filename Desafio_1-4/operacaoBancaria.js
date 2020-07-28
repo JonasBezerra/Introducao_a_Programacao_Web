@@ -26,6 +26,7 @@ console.log(user)
 /*Crie uma função chamada getHigherTransactionByType que recebe como parâmetro o tipo de transação credit/debit, percorre as transações do usuário e retorna o objeto da transação de maior valor com aquele tipo:*/
 
 function getHigherTransactionByType(typeTransaction){
+    let heigherTransiction
     let heigherValue = 0;
     for (const transaction of user.transactions) {
         if(transaction.type == typeTransaction){
