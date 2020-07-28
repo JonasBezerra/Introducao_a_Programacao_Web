@@ -42,8 +42,8 @@ function getHigherTransactionByType(type) {
     return higherTransaction
 }
 
-console.log(`${getHigherTransactionByType('debit')}`)
-console.log(getHigherTransactionByType('credit'))
+console.log('O objeto debit com maior valor é: ',getHigherTransactionByType('debit'))
+console.log('O objeto credit com maior valor é: ',getHigherTransactionByType('credit'))
 
 // Crie uma função chamada getAverageTransactionValue que retorna o valor médio das transações de um usuário independente do seu tipo:
 
@@ -59,3 +59,20 @@ function getAverageTransactionValue(){
     return sum/totValue
 }
 console.log(`A média é: ${getAverageTransactionValue()}`);
+
+// Crie uma função chamada getTransactionsCount que retorna o número de transações de cada tipo credit/debit, o retorno da função deve ser um objeto e seguir exatamente como o modelo apresentado abaixo: getTransactionsCount(); 
+// { credit: 5, debit: 3 }
+
+
+function getTransactionsCount(){
+    let numberTrasactions = {credit:0,debit:0}
+    for (const transaction of user.transactions) {
+        if(transaction.type == 'credit'){
+            numberTrasactions.credit +=1   
+        }else{
+            numberTrasactions.debit +=1   
+        }
+    }
+    return numberTrasactions
+}
+console.log(getTransactionsCount())
