@@ -42,8 +42,8 @@ function getHigherTransactionByType(type) {
     return higherTransaction
 }
 
-console.log(`O maior valor de credit é:${getHigherTransactionByType('credit')}`)
-console.log(`O maior valor de debit é:${getHigherTransactionByType('debit')}`)
+console.log(`${getHigherTransactionByType('debit')}`)
+console.log(getHigherTransactionByType('credit'))
 
 // Crie uma função chamada getAverageTransactionValue que retorna o valor médio das transações de um usuário independente do seu tipo:
 
