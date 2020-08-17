@@ -2,3 +2,6 @@
 
 # 
 <p align="center"><a href="https://github.com/JonasBezerra" ><img src="https://img.shields.io/static/v1?label=Made%20By&message=Jonas&color=rgb(253,149,31)&style=flat-square&logo=JavaScript" width="150px" ></a><p/>
+
+### Javascript básico + Desafios
+
