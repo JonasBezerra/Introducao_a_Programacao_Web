@@ -9,4 +9,7 @@ Nesse primeiro Módulo do LaunchBases chamado **Introdução a Programação Web
 
 ## 📝Licensa
 
-Esse projeto está sob a licença MIT. Veja o arquivo LICENÇA para mais detalhes.
+Esse projeto está sob a licença [EMIT](https://github.com/JonasBezerra/Introducao_a_Programacao_Web/blob/master/LICENSE).
+<hr>
+
+Conheça a [Rocketseat](https://rocketseat.com.br/) e faça parte da [comunidade](https://discordapp.com/invite/gCRAFhc)
