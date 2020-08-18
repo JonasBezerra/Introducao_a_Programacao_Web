@@ -5,7 +5,7 @@
 
 ## <img width="50px" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png">Introdução ao JS + Desafios
 ### Aulas mais os desafios concluidos do curso Lauchbases - Rocketseat
-<p>Nesse primeiro Módulo do LaunchBases chamado **Introdução a Programação Web** foram ministradas aulas e desafios a serem concluidos. E conforme vamos práticando e evoluindo mais desafios com um nível mais complexo vão sendo proposto <p/>
+Nesse primeiro Módulo do LaunchBases chamado **Introdução a Programação Web** foram ministradas aulas e desafios a serem concluidos. E conforme vamos práticando e evoluindo mais desafios com um nível mais complexo vão sendo proposto 
 
 ## 📝Licensa
 
